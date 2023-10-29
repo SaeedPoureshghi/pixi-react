@@ -1,12 +1,14 @@
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
+import { Button, ButtonTypes, Card } from '@saeedalone/pixi-ui';
 import styles from './app.module.css';
 
-import NxWelcome from './nx-welcome';
+
 
 export function App() {
   return (
     <div>
-      <NxWelcome title="pixi-react" />
+      <Card title='Header'/>
+      <Button type={ButtonTypes.danger} title='OK'/>
     </div>
   );
 }
